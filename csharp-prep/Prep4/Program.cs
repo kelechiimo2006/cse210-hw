@@ -7,22 +7,22 @@ class Program
     {
         Console.WriteLine("Enter a list of numbers, type 0 when finished.");
         List<int> numbers = new List<int>();
-        int _number;
+        int number;
 
         do
         {
             Console.Write("Enter a number: ");
-            _number = int.Parse(Console.ReadLine());
-            if (_number != 0)
+            number = int.Parse(Console.ReadLine());
+            if (number != 0)
             {
-            numbers.Add(_number);
+            numbers.Add(number);
             }
-        }  while(_number != 0);
-        int _sumNumbers = numbers.Sum();
-        double _averageNumbers = numbers.Average();
-        int _maxNumber = numbers.Max();
-        Console.WriteLine($"The sum is: {_sumNumbers}");
-        Console.WriteLine($"The average is: {_averageNumbers}");
-        Console.WriteLine($"The largest number is: {_maxNumber}");
+        }  while(number != 0);
+        int sumNumbers = numbers.Sum();
+        double averageNumbers = numbers.Average();
+        int maxNumber = numbers.Max();
+        Console.WriteLine($"The sum is: {sumNumbers}");
+        Console.WriteLine($"The average is: {averageNumbers}");
+        Console.WriteLine($"The largest number is: {maxNumber}");
     }
 }
